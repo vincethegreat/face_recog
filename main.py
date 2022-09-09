@@ -1,7 +1,7 @@
 import cv2
 from simple_facerec import SimpleFacerec
 
-# Encode faces from a folder
+# e encode ang mga nawong sa folders
 sfr = SimpleFacerec()
 sfr.load_encoding_images("images/")
 
@@ -20,7 +20,7 @@ while True:
         cv2.putText(frame, name,(x1, y1 - 10), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 200), 2)
         cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 200), 4)
 
-    cv2.imshow("Frame", frame)
+    cv2.imshow("Image Processing for Wanted Criminals", frame)
 
     key = cv2.waitKey(1)
     if key == 27:
